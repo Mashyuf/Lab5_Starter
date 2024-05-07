@@ -12,7 +12,6 @@ function init() {
   let voices = synth.getVoices();
   const interval = setInterval(checkSpeaking, 500);
   
-  console.log(voices);
   for(let i = 0; i < voices.length; i++) {
     const option = document.createElement('option');
     option.text = voices[i].name;
